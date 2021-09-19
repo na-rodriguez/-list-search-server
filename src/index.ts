@@ -25,8 +25,8 @@ const main = async () => {
     })
   )
 
-  app.listen(3001, () => {
-    console.log("SERVER RUNNING ON PORT 3001");
+  app.listen(4000, () => {
+    console.log("SERVER RUNNING ON PORT 4000");
   })
 }
 
