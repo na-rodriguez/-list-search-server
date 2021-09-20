@@ -29,12 +29,3 @@ export const GET_CONTACT = {
     return await Contacts.findOne({ id: id });
   },
 }
-
-// Regex da pesquisa: considerar caractere de espaço, 
-// dado o payload acima name: Weber Stein, 
-// se entrar com we in deve retornar no resultado Weber Stein
-const partialSearch = (name: string) => {
-  var str = "The best things in life are free";
-  var res = new RegExp(name.trim().replace(" ", ".+"), "i").test(str);
-
-}
